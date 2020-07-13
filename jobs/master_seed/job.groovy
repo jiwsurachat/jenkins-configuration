@@ -3,6 +3,9 @@
 def entities = [
   [
     name: 'aycap'
+  ],
+  [
+    name: 'test1'
   ]
 ].each { item ->
 
