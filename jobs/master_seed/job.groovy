@@ -22,7 +22,7 @@ def entities = [
       git {
         remote {
           url("${GIT_PIPELINE_REPO}")
-          credentials('github_credential')
+          //credentials('github_credential')
         }
         branch('master')
       }
