@@ -2,7 +2,7 @@
 
 def entities = [
   [
-    name: 'aycap'
+    name: 'sample'
   ],
   [
     name: 'test1'
