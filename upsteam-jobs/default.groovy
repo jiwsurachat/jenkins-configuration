@@ -33,7 +33,7 @@ node(label: 'docker') {
         submoduleCfg: [],
         userRemoteConfigs: [
           [
-            credentialsId: 'github_credential',
+            // credentialsId: 'github_credential',
             url: '$pipeLineRepo'
           ]
         ]
@@ -70,7 +70,7 @@ node(label: 'docker') {
         submoduleCfg: [],
         userRemoteConfigs: [
           [
-            credentialsId: 'github_credential',
+            // credentialsId: 'github_credential',
             url: '$gitBaseUrl$repository' + '.git'
           ]
         ]

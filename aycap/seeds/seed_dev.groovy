@@ -21,7 +21,7 @@ def pipelineLists = [
   def engine          = new groovy.text.SimpleTemplateEngine()
   def text            = new File(fileLocaltion).text.stripIndent().trim()
   def binding         = [
-                          "pipeLineRepo": "${GIT_PIPELINE_REPO}",
+                          "pipeLineRepo": "${GIT_BASE_URL}/${GIT_PIPELINE_REPO}",
                           "gitBaseUrl": "${GIT_BASE_URL}",
                           "branch": "${branch}",
                           "repository": "${repository}",
@@ -41,7 +41,7 @@ def pipelineLists = [
     logRotator(-1, 5)
 
     properties {
-      githubProjectUrl("${GIT_PIPELINE_REPO}/${repository}")
+      githubProjectUrl("${GIT_BASE_URL}/${repository}")
     }
 
     triggers {

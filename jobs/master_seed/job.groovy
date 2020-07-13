@@ -24,7 +24,7 @@ def entities = [
     scm {
       git {
         remote {
-          url("${GIT_PIPELINE_REPO}")
+          url("${GIT_BASE_URL}/${GIT_PIPELINE_REPO}")
           //credentials('github_credential')
         }
         branch('master')
